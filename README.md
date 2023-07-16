@@ -27,7 +27,7 @@ Your task is to build a Support Ticket System application that allows users to c
    - [x] Include a button that will generate random ticket with dates between now - 2 days and now + 2 days, random client name, random issue message and save it using the REST API everytime it's clicked
 
      - [x] Extra: Use Debounce to avoid concurrent generation of tickets.
-            - [x] Disabled the button to avoid concurrent ticket generation
+        - [x] Disabled the button to avoid concurrent ticket generation
 
    **Check the UI images at the end of the requirements.**
 
