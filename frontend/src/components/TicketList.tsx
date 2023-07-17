@@ -13,12 +13,12 @@ const TicketList: React.FC<TicketListProps> = ({ tickets, onTicketUpdated }) => 
     <Grid container>
       {
         tickets.map((ticket, index) => (
-          <>
-            <Grid item xs={6} key={ticket._id}>
+          <React.Fragment key={ticket._id}>
+            <Grid item xs={6}>
               <TicketItem ticket={ticket} onTicketUpdated={onTicketUpdated} index={index} />
             </Grid>
             <Grid item xs={6} />
-          </>
+          </React.Fragment>
         ))
       }
     </Grid>

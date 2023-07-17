@@ -23,7 +23,7 @@ const TicketForm: React.FC<TicketFormProps> = ({ onTicketGenerated }) => {
 
   return (
     <Button variant="contained" disabled={loading} onClick={generateRandomTicket}>
-      {loading ? 'Generating...' : 'Create Randomly'}
+      {loading ? 'Generating...' : 'Create Randomly >'}
     </Button>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Box } from '@mui/material';
+import { Grid } from '@mui/material';
 import Ticket from './models/Ticket';
 import TicketList from './components/TicketList';
 import TicketForm from './components/TicketForm';
@@ -33,13 +33,23 @@ const App: React.FC = () => {
     border-radius: 25px;
     margin: 30px 40px;
   `
+
+  const TicketListWrapper = styled.div`
+    max-height: 65vh;
+    overflow-y: auto;
+  `
   return (
     <AppWrapper>
       <Header />
-      <TicketList tickets={tickets} onTicketUpdated={handleTicketUpdated} />
-      <Box mt={2}>
-        <TicketForm onTicketGenerated={handleTicketUpdated} />
-      </Box>
+      <TicketListWrapper>
+        <TicketList tickets={tickets} onTicketUpdated={handleTicketUpdated} />
+      </TicketListWrapper>
+      <Grid container margin={2}>
+        <Grid item xs={9} />
+        <Grid item xs={2}>
+          <TicketForm onTicketGenerated={handleTicketUpdated} />
+        </Grid>
+      </Grid>
     </AppWrapper>
   );
 };
