@@ -49,4 +49,6 @@ Your task is to build a Support Ticket System application that allows users to c
 
 - Provide a GitHub repository with your code.
 - Include a README file with instructions on how to set up and run the application.
+   - Backend: https://github.com/NihalAG/hiring-challenge/blob/main/backend/README.md
+   - Frontend: https://github.com/NihalAG/hiring-challenge/blob/main/frontend/README.md 
 - You can also include any additional documentation or comments to explain your design choices or assumptions.
